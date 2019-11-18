@@ -19,13 +19,13 @@ import groovy.xml.MarkupBuilder;
 apply plugin: 'com.android.application'
 
 def twaManifest = [
-    applicationId: 'org.chromium.twa.svgomg',
-    hostName: 'svgomg.firebaseapp.com', // The domain being opened in the TWA.
+    applicationId: 'net.santiment.sanbase.android',
+    hostName: 'app.santiment.net', // The domain being opened in the TWA.
     launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'SVGOMG TWA', // The name shown on the Android Launcher.
-    themeColor: '#303F9F', // The color used for the status bar.
-    backgroundColor: '#bababa', // The color used for the splash screen background.
-    enableNotifications: false, // Set to true to enable notification delegation.
+    name: 'Sanbase', // The name shown on the Android Launcher.
+    themeColor: '#fff', // The color used for the status bar.
+    backgroundColor: '#fff', // The color used for the splash screen background.
+    enableNotifications: true, // Set to true to enable notification delegation.
     useBrowserOnChromeOS: true, // Set to false if you've added interaction with Android system APIs.
     // Add shortcuts for your app here. Every shortcut must include the following fields:
     // - name: String that will show up in the shortcut.
@@ -44,8 +44,8 @@ android {
         applicationId twaManifest.applicationId
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 3
-        versionName "1.1.1"
+        versionCode 9
+        versionName "1.0.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         // The name for the application on the Android Launcher
